@@ -1,0 +1,128 @@
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    background-color: #e3e9f7;
+    font-size: 18px;
+}
+.f-container{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.wrapper .footer-widget{
+    width: calc(21% - 30px);
+    margin: 0 15px 45px;
+    padding: 0 12px;
+}
+
+.wrapper .footer-widget:nth-child(1){
+    width: calc(25% - 30px);
+    margin-right: 15px;
+}
+
+.wrapper .footer-widget .logo-footer{
+    margin-bottom: 30px;
+    vertical-align: middle;
+
+}
+
+.wrapper .footer-widget .description{
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.wrapper .footer-widget .socials{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+}
+
+.wrapper .footer-widget .socials li{
+    list-style: none;
+}
+
+.wrapper .footer-widget .socials li a{
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    color: black;
+    background-color: rgba(255, 191, 1);
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3 ease-out;
+}
+
+.wrapper .footer-widget .social li a:hover{
+    background: rgb(255, 191, 1, 0.5);
+}
+
+.wrapper .footer-widget h6{
+    color: darkslategrey;
+    font-weight: 600;
+    margin: 10px 0 35px;
+    font-size: 20px;
+}
+
+.wrapper .footer-widget .links li{
+    list-style: none; 
+}
+
+.wrapper .footer-widget .links li a{
+    color: darkslategrey;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 32px;
+    transform: all 0.3s ease-out;
+    
+}
+.wrapper .footer-widget .links li a:hover{
+    text-decoration: underline 2px rgba(88, 89, 120, 0.4);
+}
+ol, ul{
+    padding-left: 0rem;
+}
+
+.copyrigth-wrapper{
+    padding: 20px 0;
+    border-top: 1px solid rgba(88, 89, 120, 0.4);
+    text-align: center;
+    font-size: 13px;
+}
+@media only screen and (max-width: 992px) {
+    .f-container{
+        max-width: 990px;
+    }
+    .wrapper .footer-widget,
+    .wrapper .footer-widget:nth-child(1){
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px){
+    .f-container{
+        max-width: 720px;
+    }
+    .wrapper .footer-widget,
+    .wrapper .footer-widget:nth-child(1){
+    width: 100%;
+    margin: 0 10px 50px;
+    }
+    .wrapper .footer-widget .socials{
+        padding-left: 3rem;
+    }
+}

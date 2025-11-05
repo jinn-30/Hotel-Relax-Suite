@@ -1,0 +1,290 @@
+@import url(header.css);
+@import url(footer.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #e3e9f7;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+#banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+#banner img{
+    width: 80%;
+    height: auto;
+}
+
+#banner .t-room{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-70%);
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    border-bottom: 2px solid;
+    text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+    letter-spacing: 0.1em;
+}
+
+section{
+    padding-bottom: 30px;
+}
+.info{
+    width: 100%;
+    background-color: white;
+    height: auto;
+    margin-bottom: 30px;
+}
+.icono{
+    width: 200px;
+}
+.contenedor, h1, .text{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+}
+.text{
+    padding-bottom: 30px;
+}
+
+.t-contenedor h1{
+    font-family:'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+
+.container-services{
+    width: 85%;
+    background-color: #d1c3b4;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.container-services h1{
+    color: black;
+    width: 30%;
+    padding-top: 30px;
+    border-bottom: 2px solid black;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .text1{
+  width: 450px;
+  padding: 40px;
+}
+
+/*Seccion horario*/
+.horario{
+  width: 70%;
+  height: 60px;
+  background-color: #d1c3b4;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+
+}
+
+.horario ul{
+  display: flex;
+  list-style: none;
+
+}
+.horario li{
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  color: #1661a6;
+  
+}
+
+/*Carosuel*/
+.i {
+  margin-top: 40px;
+  margin-bottom: 40px;
+	position: relative;
+	display: block;
+	width: 500px;
+	height: 300px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.i:before, .i:after {
+	content: '⥪';
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	z-index: 2;
+	width: 2rem;
+	height: 2rem;
+	background: dodgerblue;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+.i:after {
+	content: '⥭';
+	left: auto;
+	right: 1rem;
+}
+
+
+input {
+	appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translateX(100%);
+	transition: transform ease-in-out 400ms;
+	z-index: 1;
+}
+
+input:focus {
+	outline: none;
+}
+
+input:after {
+	content: attr(title);
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: .5rem;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+
+input:not(checked):before {
+	content: '';
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	top: 50%;
+	left: calc(-100% + 1rem);
+}
+
+input:checked:before {
+	display: none;
+	left: 1rem;
+}
+
+input:checked {
+	transform: translateX(0);
+	pointer-events: none;
+	z-index: 0;
+	box-shadow: -5px 10px 20px -15px rgba(0,0,0,1);
+}
+
+input:checked + input:before {
+	left: -3rem;
+}
+
+input:checked + input ~ input:before {
+	display: none;
+}
+ 
+/*End Carousel*/
+footer {
+    background-color: #f0f0f0;
+  }
+
+@media(max-width:1024px){
+    i{
+        margin-left: 40px;
+    }
+}  
+@media (max-width: 1100px) {
+    .horario li{
+        padding: 0;
+        font-size: 13px;
+        margin: 0 auto;
+    }
+}   
+
+
+@media (max-width: 768px) {
+    .box{
+        display: block;
+    }
+    .box .text1{
+        width: 100%;
+        text-align: justify;
+        padding: 20px;
+    }
+    .container-services{
+        width: 90%;
+    }
+    #banner .t-room{
+        font-size: 28px;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .box i{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 90%;
+      margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 320px){
+    .box i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 20px;
+      }
+}
+
+
+

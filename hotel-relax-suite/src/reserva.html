@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVA</title>
+    <link rel="shortcut icon" href="images/icono.ico" type="image/x-icon">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!--cdnjs font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/reserva.css">
+</head>
+
+<body>
+    <!--Nab Bar-->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <span>HOTEL RELAX SUITE</span>
+            </a>
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <div class="logo">
+                <img src="images/Logo.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="reserva.html" class="active">Disponibilidad</a></li>
+                <li><a href="informacion.html">Información</a></li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+  
+    </header>
+    <!--End Nav Bar-->
+
+    <main>
+        <div class="form-container">
+            <form action="" method="post">
+                <h2>RESERVA TU HABITACIÓN</h2>
+                <div class="content">
+                    <!--Nombres-->
+                    <div class="input-box">
+                        <label for="name">Nombres *</label>
+                        <input type="text" name="name" placeholder="Enter name" required>
+                    </div>
+                    <!--Apellidos-->
+                    <div class="input-box">
+                        <label for="lastmame">Apellidos *</label>
+                        <input type="text" name="lastname" placeholder="Enter lastname" required>
+                    </div>
+                    <!--Email-->
+                    <div class="input-box">
+                        <label for="name">E-mail *</label>
+                        <input type="email" name="email" placeholder="Enter email" required>
+                    </div>
+                    <!--Telefono-->
+                    <div class="input-box">
+                        <label for="phonenumber">Teléfono *</label>
+                        <input type="tel" name="tel" placeholder="Enter phone number" required pattern="[0-9]{10}">
+                    </div>
+                    <!--Cuidad-->
+                    <div class="input-box">
+                        <label for="city">Ciudad *</label>
+                        <input type="text" name="city" placeholder="Enter city" required>
+                    </div>
+                    <!--Codigo Postal-->
+                    <div class="input-box">
+                        <label for="codpostal">Código Postal</label>
+                        <input type="text" name="codPostal" placeholder="Enter code postcard" required pattern="[0-9]{6}">
+                    </div>
+                    <!--Habitación-->
+                    <div class="input-box">
+                        <label for="room">Habitación *</label>
+                        <select name="room" id="">
+                            <option value="0">Doble Oasis</option>
+                            <option value="1">Standard Doble</option>
+                            <option value="2">Junior Suite Doble</option>
+                            <option value="3">Stardard Triple</option>
+                            <option value="4">Stardard Cuadruple</option>
+                        </select>
+                    </div>
+                    <!--Numero de personas-->
+                    <div class="input-box">
+                        <label for="person">Personas *</label>
+                        <input type="number" name="person" id="person" placeholder="Enter person number" required>
+                        <span id="alert"></span>
+                    </div>
+                    <!--Fecha de llegada-->
+                    <div class="input-box">
+                        <label for="arrival date">Fecha de llegada *</label>
+                        <input type="date" name="arrival date" required>
+                    </div>
+                    <!--Fecha de salida-->
+                    <div class="input-box">
+                        <label for="departure date">Fecha de salida *</label>
+                        <input type="date" name="departure date" required>
+                    </div>
+
+                </div>
+                <div class="alert">
+                    <p>Se aplicarán la <a href="#">Política de privacidad</a> y las <a href="#">Condiciones del
+                    servicio</a> de Google.</p>
+                </div>
+                <div class="button-container">
+                    <button type="submit" id="button" onclick="validar()">Reservar</button>
+                </div>
+                <span id="mensaje-correcto"></span>
+                <span id="mensaje-incorrecto"></span>
+            </form>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="norm-and-copy">
+                <div class="norm">
+                    <a href="">Normas</a>
+                </div>
+                <div class="copy">
+                    <p>Copyright © 2023</p>
+                </div>
+            </div>
+            <div class="info">
+               <p>Se aplicara la <a href="">Política de privacidad</a> tambien los 
+                <a href="">Terminos y condiciones</a> además el <a href="">Aviso de cookies</a></p>
+            </div>
+            <div class="config-cookies">
+                <a href="">Configuración de cookies</a>
+            </div>
+        </div>
+    </footer>
+    <!--End footer-->
+    <script src="scripts/reserva.js"></script>
+</body>
+
+</html>
