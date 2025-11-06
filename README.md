@@ -1,6 +1,6 @@
 # Hotel-Relax-Suite
 Este proyecto estudiantil simula una página web destinada a un hotel. La idea del proyecto fue utilizar imágenes y contenido de una página web existente para diseñarla con nuestro propio estilo, por lo tanto, todo el contenido de imágenes y vídeos que contiene este proyecto son propiedad de Hotel Arena Blanca, excepto el nombre Hotel Relax Suite, el icono, el logo y sus variantes solo para uso de la actividad.
-## Objetivos a cumpliir
+## Objetivos a cumplir
 - Utilizar las etiquetas para crear una estructura HTML definida
 - Utilizar librerías y frameworks
 - Crear un icono, logo y sus variantes y nombre de marca o establecimiento
