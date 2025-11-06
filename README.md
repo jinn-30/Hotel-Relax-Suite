@@ -11,3 +11,5 @@ Este proyecto estudiantil simula una página web destinada a un hotel. La idea d
 - Ningún enlace debe estar vacío o no dirigir a ningún lugar
 ## Aclaraciones
 Quiero dejar claro que esta página fue una actividad para la universidad, no tiene ningún uso comercial o beneficio económico. La página de referencia fue [Hotel Arena Blanca](https://www.hotelarenablanca.com.co/) las imágenes, vídeos, gif y relacionados son propiedad de ellos, no se guardan copias físicas de ese contenido.
+## Vista previa
+https://jinn30-hotel-relax-suite.netlify.app/hotel-relax-suite/
